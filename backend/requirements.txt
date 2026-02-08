@@ -1,0 +1,10 @@
+Flask
+Flask-Cors
+oracledb
+python-dotenv
+requests
+bcrypt
+PyJWT
+Flask-APScheduler
+Flask-SocketIO
+eventlet
