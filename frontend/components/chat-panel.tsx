@@ -14,7 +14,7 @@ export default function ChatPanel() {
 
     useEffect(() => {
         // Connect to socket backend
-        const newSocket = io('http://localhost:5001', {
+        const newSocket = io(process.env.NEXT_PUBLIC_API_URL?.replace('/api', '') || 'http://localhost:5001', {
             transports: ['websocket'],
             autoConnect: true
         });
